@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+.grid div:nth-child(odd){
+    background-color:blueviolet;
+    padding: 100px;
+}
+.grid div:nth-child(even){
+    background-color:pink;
+    text-align: center;
+
+}
+header{
+    background-color:Pink;
+    padding: 50px;
+    font-size: 20px;
+
+}
+section{
+    background-color:cadetblue;
+    padding: 195px;
+    display:flex;
+    flex-direction: column;
+    display:inline-block;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    display:inline-block;
+    margin: 20px;
+}
