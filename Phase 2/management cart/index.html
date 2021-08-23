@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="add.js"></script>
+</head>
+
+<body>
+    <center><h1>Shopping Cart</h1></center>
+    <div>
+   
+    <div class="container">
+        <div id="cartSize">
+            <label>Cart Size:</label>
+        </div>
+        <div class="row">
+            <div class="post col-md-3">
+                <h3 id="lipstick">Name: mac lipstick</h3>
+                <h3 id="lipstickPrice">Price:$20</h3>
+                <button type="button" class="btn btn-primary" onclick="add('mac lipstick','100')">Add</button>
+            </div>
+            <div class="post col-md-3">
+                <h3>Name:Mac Foundation</h3>
+                <h3>Price: $35</h3>
+                <button type="button" class="btn btn-primary" onclick="add('Mac Foundation','60')">Add</button>
+            </div>
+            <div class="post col-md-3">
+                <h3>Name: concelor</h3>
+                <h3>Price: $29</h3>
+                <button type="button" class="btn btn-primary" onclick="add('concelor','150')">Add</button>
+            </div>
+            <div class="post col-md-3">
+                <h3>Name: Mac Prep Primer</h3>
+                <h3>Price: $42</h3>
+                <button type="button" class="btn btn-primary" onclick="add('Mac Prep Primer','150')">Add</button>
+            </div>
+        </div>
+        <div>
+            <a href="checkout.html">checkout</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

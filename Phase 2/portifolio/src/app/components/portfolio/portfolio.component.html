@@ -1,0 +1,32 @@
+<div>
+  <h2>My Portfolio</h2>
+  <h4>Welcome {{name}}</h4>
+  <form [formGroup]="portfolio" (ngSubmit)="onSave()">
+      <label>Contact information</label>
+      <input type="text" formControlName="contact">
+      <br>
+      <label>Phone number</label>
+      <input type="text" formControlName="phone">
+      <label>Email</label>
+      <input type="text" formControlName="email">
+      <input type="submit" value="Save">
+  </form>
+</div>
+<div *ngIf="flag">
+  <h2>Contact Details</h2>
+  <table border="1">
+      <tbody>
+          <tr>
+              <th>Name</th>
+              <th>Phone number</th>
+              <th>Email</th>
+          </tr>
+          <tr *ngFor="let contact of contacts">
+              <td>{{contact.contact}}</td>
+              <td>{{contact.phone}}</td>
+              <td>{{contact.Email}}</td>
+          </tr>
+      </tbody>
+      
+  </table>
+</div>
